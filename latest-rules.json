@@ -1,0 +1,17 @@
+{
+  "version": "1.0",
+  "updated": "2026-03-26",
+  "changelog": ["v1.0: 初始版本,24类AI写作特征检测"],
+  "ai_patterns": {
+    "structural": ["过度连接词", "段落均匀", "列表过多", "总分总结构"],
+    "vocabulary": ["书面套话", "形容词过丰", "固定短语", "缺少口语"],
+    "tone": ["语气均匀", "缺少不确定", "过于完美", "面面俱到"],
+    "logic": ["论证对称", "完美例子", "缺少跳跃", "安全结论"],
+    "academic": ["引用统一", "综述列清单", "方法过流畅", "讨论过圆满", "被动语态", "术语一致", "缺少第一人称", "过渡过顺滑"]
+  },
+  "rewrite_intensity": {
+    "light": {"score_range": "0-15", "expected_reduction": "5-10%"},
+    "medium": {"score_range": "16-35", "expected_reduction": "15-25%"},
+    "deep": {"score_range": "36-72", "expected_reduction": "25-40%"}
+  }
+}
